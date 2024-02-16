@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   root 'top#index'
-
+  get '/second', to:'second#index'
 end
