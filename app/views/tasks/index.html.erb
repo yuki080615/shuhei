@@ -1,4 +1,10 @@
 <h1> タスク一覧 </h1>
 <% @tasks.each do |task| %>
-    <p><%= task.id %>. <%= link_to task.name, task_path(task) %></p>
+    <p> <%= link_to "#{task.id} . #{task.name}", task_path(task) %></p>
 <% end %>
+
+<div>
+    <button>
+        <a href="/tasks/new">タスク新規作成</a>
+    </button>
+</div>
