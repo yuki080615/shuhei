@@ -13,4 +13,5 @@ Rails.application.routes.draw do
   post '/tasks/:id', to: 'tasks#update'
   delete '/tasks/:id', to: 'tasks#destroy'
 
+  get '/api/tasks', to: 'api/tasks#index'
 end
